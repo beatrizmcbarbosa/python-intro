@@ -11,7 +11,7 @@ import sys
 if len(sys.argv) < 2:
     sys.exit("Too few arguments")
 
-# Introducing slice. sys.argv[1:] will give me a slice of the list, in this case, starting at index 1.
+# Introducing slices. sys.argv[1:] will give me a slice of the list, in this case, starting at index 1.
 # I could also request a slice sys.argv[1:-1] which would give me the results in index 1 up to the one before the last.
 for arg in sys.argv:
     print("hello, my name is", arg)
