@@ -1,13 +1,13 @@
-students=[
+students = [
     {"name": "Hermione", "house": "Gryffindor", "patronus": "Otter"},
     {"name": "Harry", "house": "Gryffindor", "patronus": "Stag"},
     {"name": "Ron", "house": "Gryffindor", "patronus": "Jack Eussel terrier"},
-    {"name": "Draco", "house": "Slytherin", "patronus": None}
+    {"name": "Draco", "house": "Slytherin", "patronus": None},
 ]
 
 # Print name, house, patronus
 for student in students:
-    print(student["name"], student["house"], student["patronus"], sep= ", ")
+    print(student["name"], student["house"], student["patronus"], sep=", ")
 
 # Print name and house (there was no patronus)
 """for student in students:
