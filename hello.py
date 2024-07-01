@@ -3,12 +3,12 @@ def main():
     name = input("What's your name? ").strip().title()
     # Split user's name into first and last name
     """first, last = name.split(" ")"""
-    hello(name)
+    print(hello(name))
 
 
 # Define function hello()
 def hello(to="world"):
-    print("hello, ", to)
+    return f"hello, {to}"
 
 
 if __name__ == "__main__":
