@@ -1,0 +1,2 @@
+# This file has the effect, even if it's empty, of telling python to treat this folder as, not just a module, but as a package.
+# A package is a python module, or multiple modules, that are organised inside a folder.
