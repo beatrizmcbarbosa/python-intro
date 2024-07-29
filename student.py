@@ -6,7 +6,8 @@ def main():
 def get_student():
     name = input("Name: ")
     house = input("House: ")
-    return name, house
+    # Here I am returning one value which is a tuple. And within this tupple, there are two values.
+    return (name, house)
 
 
 if __name__ == "__main__":
