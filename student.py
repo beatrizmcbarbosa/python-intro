@@ -1,6 +1,7 @@
 def main():
-    name, house = get_student()
-    print(f"{name} from {house}")
+    student = get_student()
+    # Can also represent a tuple like this. When to use tuple vs list? When I know the value can change.
+    print(f"{student[0]} from {student[1]}")
 
 
 def get_student():
