@@ -1,5 +1,8 @@
 class Student:
     def __init__(self, name, house):
+        # if name does not exist
+        if not name:
+            raise ValueError
         self.name = name
         self.house = house
 
@@ -13,8 +16,7 @@ def get_student():
     # An object is the same as an instance
     name = input("Name: ")
     house = input("House: ")
-    student = Student(name, house)
-    return student
+    return Student(name, house)
 
 
 if __name__ == "__main__":
