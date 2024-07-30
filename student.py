@@ -1,5 +1,6 @@
 class Student:
-    def __init__(self, name, house):
+    # house = None makes house an optional variable
+    def __init__(self, name, house=None):
         # if name does not exist
         if not name:
             raise ValueError("Missing name")
