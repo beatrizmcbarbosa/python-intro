@@ -1,6 +1,5 @@
 class Student:
-    # house = None makes house an optional variable
-    def __init__(self, name, house=None):
+    def __init__(self, name, house):
         # if name does not exist
         if not name:
             raise ValueError("Missing name")
@@ -9,10 +8,13 @@ class Student:
         self.name = name
         self.house = house
 
+    def __str__(self):
+        return f"{self.name} from {self.house}"
+
 
 def main():
     student = get_student()
-    print(f"{student.name} from {student.house}")
+    print(student)
 
 
 def get_student():
