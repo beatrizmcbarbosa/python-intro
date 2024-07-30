@@ -1,6 +1,5 @@
 class Student:
-    def __init__(self, name, house):
-        # if name does not exist
+    def __init__(self, name, house, patronus):
         if not name:
             raise ValueError("Missing name")
         if house not in ["Gryffindor", "Hufflepuff", "Ravenclaw", "Slytherin"]:
@@ -10,6 +9,14 @@ class Student:
 
     def __str__(self):
         return f"{self.name} from {self.house}"
+
+    # Getter
+    def house(self):
+        return self.house
+
+    # Setter
+    def house(self, house):
+        self.house = house
 
 
 def main():
