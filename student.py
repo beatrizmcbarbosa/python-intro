@@ -2,8 +2,6 @@ class Student:
     def __init__(self, name, house, patronus):
         if not name:
             raise ValueError("Missing name")
-        if house not in ["Gryffindor", "Hufflepuff", "Ravenclaw", "Slytherin"]:
-            raise ValueError("Invalid house")
         self.name = name
         self.house = house
 
@@ -11,12 +9,17 @@ class Student:
         return f"{self.name} from {self.house}"
 
     # Getter
+    @property
     def house(self):
-        return self.house
+        # The _ is used because I can't have both the property and the instance variable both called house, python will confuse one for the other
+        return self._house
 
     # Setter
+    @house.setter
     def house(self, house):
-        self.house = house
+        if house not in ["Gryffindor", "Hufflepuff", "Ravenclaw", "Slytherin"]:
+            raise ValueError("Invalid house")
+        self._house = house
 
 
 def main():
