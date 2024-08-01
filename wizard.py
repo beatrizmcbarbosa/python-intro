@@ -20,3 +20,9 @@ class Professor(Wizard):
         self.subject = subject
 
     ...
+
+# The below lines of code ensure that the init method of the respective classes are called
+# In the case of student and professor, they call the Student and Professor classes which in turn call the Wizard classes
+wizard = Wizard("Albus")
+student = Student("Harry", "Gryffindor")
+professor = Professor("Severus", "Defense against the dark arts")
