@@ -10,3 +10,13 @@ class Vault:
 
 potter = Vault(100, 50, 25)
 print(potter)
+
+weasley = Vault(100, 50, 25)
+print(weasley)
+
+galleons = potter.galleons + weasley.galleons
+sickles = potter.sickles + weasley.sickles
+knuts = potter.knuts + wesley.knuts
+
+total = Vault(galleons, sickles, knuts)
+print(total)
