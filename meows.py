@@ -1,7 +1,8 @@
-def meow(n: int):
-    for _ in range(n):
-        print("meow")
+# Here I am saying that meow will return a value which will be a string
+def meow(n: int) -> str:
+    return "meow\n" * n
 
 
 number: int = int(input("Number: "))
-meow(number)
+meows: str = meow(number)
+print(meows)
