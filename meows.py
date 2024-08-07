@@ -1,18 +1,9 @@
-def meow(n: int) -> str:
-    # Below, docstring, is a string used to document a Python module, class, function or method
-    # It is just a convention, in standard format, to document, in this case, my function
-    """
-    Meow n times.
+import argparse
 
-    :param n: Number of times to meow
-    :type n: int
-    :raise TypeError: If n is not an int
-    :return: A string of n meows, one per line
-    :rtype: str
-    """
-    return "meow\n" * n
+parser = argparse.ArgumentParser(description="Meow like a cat")
+# With argparse, arguments can be passed in the cli in no particular order
+parser.add_argument("-n", default=1, help="number of times to meow", type=int)
+args = parser.parse_args()
 
-
-number: int = int(input("Number: "))
-meows: str = meow(number)
-print(meows)
+for _ in range(int(args.n)):
+    print("meow")
