@@ -1,4 +1,11 @@
-MEOWS= 3
+class Cat:
+    # Class variable
+    MEOWS = 3
 
-for _ in range(MEOWS):
-  print("meow")
+    def meow(self):
+        for _ in range(Cat.MEOWS):
+            print("meow")
+
+
+cat = Cat()
+cat.meow()
